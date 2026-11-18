@@ -34,3 +34,22 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background: #eef6ff;
 }
+
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.controls select {
+  padding: 6px 8px;
+  font: inherit;
+}
+
+
+#dataTable {
+  margin-top: 40px;
+}

@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smoking Rates by Age</title>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="chartscript.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>Smoking Rates by Age in Great Britain</h1>
   <p>2014–2025, all persons. Figures are percentages.</p>
+
+  <h2>Smoking trends by age group</h2>
+  <canvas id="smokingChart"></canvas>
+
   <table id="dataTable">
     <thead>
       <tr>
@@ -20,19 +26,16 @@
         <th>Smoking rate (%)</th>
       </tr>
     </thead>
-    <tbody>
-    </tbody>
+    <tbody></tbody>
   </table>
 
   <p>
     Source: Office for National Statistics, Opinions and Lifestyle Survey.
-  <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/drugusealcoholandsmoking/datasets/adultsmokinghabitsingreatbritain">
-    View the smoking dataset (2025 edition)
-  </a>.
+    <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/drugusealcoholandsmoking/datasets/adultsmokinghabitsingreatbritain">View the smoking dataset (2025 edition, Table 1)</a>.
   </p>
   <p>
     Figures are survey estimates of the percentage of people in each age group
-  who reported smoking cigarettes, even occasionally.
+    who reported smoking cigarettes, even occasionally.
   </p>
 </body>
 </html>
